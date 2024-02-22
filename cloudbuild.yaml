@@ -38,4 +38,4 @@ images: [
    'gcr.io/$PROJECT_ID/my-app-vue:latest'
   ]
 options:
-  logging: NONE
+  logging: CLOUD_LOGGING_ONLY
