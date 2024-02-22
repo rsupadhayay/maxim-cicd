@@ -37,4 +37,3 @@ steps:
 images: [
    'gcr.io/$PROJECT_ID/my-app-vue:latest'
   ]
-logging: CLOUD_LOGGING_ONLY
