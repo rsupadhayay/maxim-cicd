@@ -6,7 +6,7 @@ I recently started indulging myself in the world of DevOps — something that ha
 
 Regardless, I’ve decided to share my knowledge and illustrate one of the core tenets of DevOps — automation and CI/CD. With a simple demo involving some of the tools and knowledge I’ve acquired throughout my time in Cloud and Software Development, I hope I will be able to help in paving the way to foster this knowledge for myself and others.
 
-## 2 Introduction
+## #2 Introduction
 
 This is a simple demo on the usage of Google's [Cloud Build](https://cloud.google.com/cloud-build), [Kubernetes Engine](https://cloud.google.com/kubernetes-engine) and [Container Registry](https://cloud.google.com/container-registry), with [Docker](https://www.docker.com/), [Vue.js](https://vuejs.org/), [Git](https://git-scm.com/) and [GitHub](https://github.com/) to build a CI/CD pipeline. Here’s a diagram that summarizes the workflow:
 
