@@ -2,10 +2,7 @@ steps:
 # Step 1
 - name: 'gcr.io/cloud-builders/docker' 
   entrypoint: 'bash'
-  args: [
-   '-c', 
-   'docker pull gcr.io/$PROJECT_ID/my-app-vue:latest || exit 0'
-  ]
+args: [ 'build', '-t', 'gcr.io/$PROJECT_ID/my-app-vue:latest', '.' ]
 # Step 2
 - name: gcr.io/cloud-builders/docker
   args: [
