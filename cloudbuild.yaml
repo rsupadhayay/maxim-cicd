@@ -15,7 +15,7 @@ steps:
    '.'
   ]
   images:
-- 'gcr.io/$PROJECT_ID/my-app-vue:latest'
+   - 'gcr.io/$PROJECT_ID/my-app-vue:latest'
   dir: 'my-app-vue'
 # Step 3
 - name: 'gcr.io/cloud-builders/kubectl'
