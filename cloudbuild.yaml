@@ -4,25 +4,25 @@ steps:
   entrypoint: 'bash'
   args: [
    '-c', 
-   'docker pull gcr.io/$PROJECT_ID/my-app-vue:latest || exit 0'
+   'docker pull gcr.io/$PROJECT_ID/test-image:latest || exit 0'
   ]
 # Step 2
 - name: gcr.io/cloud-builders/docker
   args: [
    'build', 
    '-t', 
-   'gcr.io/$PROJECT_ID/my-app-vue:latest',--cache-from,
+   'gcr.io/$PROJECT_ID/test-image:latest',--cache-from,
    '.'
   ]
   dir: 'my-app-vue'
 - name: 'gcr.io/cloud-builders/docker'
-  args: ['push', 'gcr.io/$PROJECT_ID/my-app-vue:latest']
+  args: ['push', 'gcr.io/$PROJECT_ID/test-image:latest']
 # Step 3
 - name: 'gcr.io/cloud-builders/kubectl'
   args: ['apply', '-f', 'k8s/']
   env:
   - 'CLOUDSDK_COMPUTE_ZONE=us-central1-d'
-  - 'CLOUDSDK_CONTAINER_CLUSTER=gke-my-app-vue'
+  - 'CLOUDSDK_CONTAINER_CLUSTER=gke-test-image'
 # Step 4
 - name: 'gcr.io/cloud-builders/kubectl'
   args: [
