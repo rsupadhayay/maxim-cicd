@@ -1,6 +1,6 @@
 # Continuous Integration/Continuous Delivery with GCP
 
-### 1 Preface###
+#### 1 Preface###
 
 I recently started indulging myself in the world of DevOps — something that has captivated my attention quite quickly. Although I’ll be honest, it took me a lot of reading and lots of YouTube binge watching to understand the concepts. Even to this day, I’m not confident enough to say that I’ve fully assimilated all of the principles, practices, values and ideals that coalesce into the concept of DevOps.
 
