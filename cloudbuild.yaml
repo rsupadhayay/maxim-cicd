@@ -1,6 +1,5 @@
 steps:
 # Step 1
-# Step 2
 - name: gcr.io/cloud-builders/docker
   args: [
    'build', 
@@ -8,7 +7,9 @@ steps:
    'gcr.io/$PROJECT_ID/my-app-vue:latest',
    '.'
   ]
-
+# Step 2
+- name: 'gcr.io/cloud-builders/docker'
+    args: ['push', 'gcr.io/$PROJECT_ID/my-app-vue:latest']
 # Step 3
 - name: 'gcr.io/cloud-builders/kubectl'
   args: ['apply', '-f', 'k8s/']
