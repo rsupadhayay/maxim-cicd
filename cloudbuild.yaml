@@ -16,12 +16,15 @@ steps:
   ]
   dir: 'my-app-vue'
 # Step 3
+- name: 'gcr.io/cloud-builders/docker'
+    args: ['push', 'gcr.io/$PROJECT_ID/docker-spring-boot-java-web:latest']
+ # Step 4   
 - name: 'gcr.io/cloud-builders/kubectl'
   args: ['apply', '-f', 'k8s/']
   env:
   - 'CLOUDSDK_COMPUTE_ZONE=us-central1-d'
   - 'CLOUDSDK_CONTAINER_CLUSTER=gke-my-app-vue'
-# Step 4
+# Step 5
 - name: 'gcr.io/cloud-builders/kubectl'
   args: [
    'set', 
