@@ -14,7 +14,7 @@ steps:
    'gcr.io/$PROJECT_ID/docker-spring-boot-java-web:latest',
    '.'
   ]
-  dir: 'my-app-vue'
+
 # Step 3
 - name: 'gcr.io/cloud-builders/docker'
     args: ['push', 'gcr.io/$PROJECT_ID/docker-spring-boot-java-web:latest']
