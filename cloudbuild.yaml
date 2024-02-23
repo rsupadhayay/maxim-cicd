@@ -19,4 +19,4 @@ images:
     asia-docker.pkg.dev/searce-playground-v1/ganesh-repo/nodejs-sample:${SHORT_SHA}
 options:
   substitutionOption: ALLOW_LOOSE
-  logging: GCS_ONLY
+  logging: CLOUD_LOGGING_ONLY
