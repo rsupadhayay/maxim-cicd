@@ -17,7 +17,6 @@ timeout: 3600s
 images:
   - >-
     asia-docker.pkg.dev/searce-playground-v1/ganesh-repo/nodejs-sample:${SHORT_SHA}
-logsBucket: 'gs://ganesh-test-bucket-02'  
 options:
   substitutionOption: ALLOW_LOOSE
   logging: GCS_ONLY
